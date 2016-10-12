@@ -1,6 +1,6 @@
 
 void setup () {
-  size(200, 200);
+  size(320, 240);
   background(200, 50, 10);
 
 }
@@ -30,7 +30,7 @@ void draw() {
   line(width/2 + 50, height/2, width/2 + 80, height/2 + 10); //arm rt
   
   strokeWeight(1);
-  line(0, 0, 200, 200); //test line
-  line(200, 0, 0, 200); //another test line
+  line(0, 0, width, height); //test line
+  line(width, 0, 0, height); //another test line
   
 }
