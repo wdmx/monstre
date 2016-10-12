@@ -2,6 +2,10 @@
 background(200, 50, 10);
 noStroke();
 size(200, 200);
+void setup () {
+  size 200, 200);
+}
+
 triangle(width/2 - 80, height/2 - 60, 
   width/2 + 80, height/2 - 60, width/2, 
   height/2 + 80); //body
