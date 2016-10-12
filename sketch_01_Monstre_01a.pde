@@ -19,4 +19,6 @@ rect(width/2 + 20, height/2 + 10, 6, 6); //mouf rt
 strokeWeight(5);
 stroke(0);
 line(width/2 - 50, height/2, width/2 - 80, height/2 + 10); //arm lt
-line(width/2 + 50, height/2, width/2 + 80, height/2 + 10);
+line(width/2 + 50, height/2, width/2 + 80, height/2 + 10); //arm rt
+
+line(0, 0, 200, 200); //test line
