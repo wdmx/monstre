@@ -21,4 +21,6 @@ stroke(0);
 line(width/2 - 50, height/2, width/2 - 80, height/2 + 10); //arm lt
 line(width/2 + 50, height/2, width/2 + 80, height/2 + 10); //arm rt
 
+strokeWeight(1);
 line(0, 0, 200, 200); //test line
+line(200, 0, 0, 200); //another test line
