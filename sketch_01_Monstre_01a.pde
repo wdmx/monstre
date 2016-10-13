@@ -1,27 +1,29 @@
 
 void setup () {
   size(320, 240);
-  background(200, 50, 10);
+
 }
 
 
 void draw() {
-
+  background(200, 50, 10);
   fill(255);
   noStroke();
-  triangle(width/2 - 80, height/2 - 60, 
-    width/2 + 80, height/2 - 60, width/2, 
-    height/2 + 80); //body
+  rectMode(CENTER);
+  
+  //draw body
+  rect(mouseX, mouseY, 
+    width/2 - 50, height/2 + 40); 
 
   fill(30, 160, 240);
-  ellipse(width/2 - 20, height/2 - 20, 10, 10); //eye lt
-  ellipse(width/2 + 20, height/2 - 20, 16, 16); //eye rt
+  ellipse(mouseX - 20, mouseY - 20, 10, 10); //eye lt
+  ellipse(mouseX + 20, mouseY - 20, 16, 16); //eye rt
   fill(0);
-  rect(width/2 - 20, height/2 + 10, 6, 6); //mouf lt
-  rect(width/2 - 10, height/2 + 14, 6, 6);
-  rect(width/2, height/2 + 10, 6, 6);
-  rect(width/2 + 10, height/2 + 14, 6, 6);
-  rect(width/2 + 20, height/2 + 10, 6, 6); //mouf rt
+
+//draw mouf
+  strokeWeight(2);
+  stroke(2);
+  line(mouseX - 20, mouseY + 20, mouseX + 20, mouseY + 20);
 
   strokeWeight(5);
   stroke(0);
