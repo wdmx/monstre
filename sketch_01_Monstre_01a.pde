@@ -2,7 +2,6 @@
 void setup () {
   size(320, 240);
   background(200, 50, 10);
-
 }
 
 
@@ -11,8 +10,8 @@ void draw() {
   fill(255);
   noStroke();
   triangle(width/2 - 80, height/2 - 60, 
-  width/2 + 80, height/2 - 60, width/2, 
-  height/2 + 80); //body
+    width/2 + 80, height/2 - 60, width/2, 
+    height/2 + 80); //body
 
   fill(30, 160, 240);
   ellipse(width/2 - 20, height/2 - 20, 10, 10); //eye lt
@@ -28,9 +27,8 @@ void draw() {
   stroke(0);
   line(width/2 - 50, height/2, width/2 - 80, height/2 + 10); //arm lt
   line(width/2 + 50, height/2, width/2 + 80, height/2 + 10); //arm rt
-  
+
   strokeWeight(1);
   line(0, 0, width, height); //test line
   line(width, 0, 0, height); //another test line
-  
 }
