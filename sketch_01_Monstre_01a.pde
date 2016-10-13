@@ -27,15 +27,15 @@ void draw() {
   strokeWeight(5);
   stroke(0);
   //arm rt
-  line(mouseX - 60, mouseY, mouseX - 100, mouseY + 20);
+  line(mouseX - 60, mouseY, pmouseX - 100, pmouseY + 20);
   //arm lt
-  line(mouseX + 60, mouseY, mouseX + 100, mouseY + 20);
+  line(mouseX + 60, mouseY, pmouseX + 100, pmouseY + 20);
   //strokeWeight(1);
   
   //leg rt
-  line(mouseX - 20,  mouseY + 80, mouseX - 25, mouseY + 140); 
+  line(mouseX - 20,  mouseY + 80, pmouseX-25, pmouseY + 140); 
   //leg rt
-  line(mouseX + 20, mouseY + 80, mouseX + 25, mouseY + 140);
+  line(mouseX + 20, mouseY + 80, pmouseX + 25, pmouseY + 140);
 }
 
 void mousePressed() {
